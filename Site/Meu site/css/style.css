@@ -1,0 +1,557 @@
+header {
+    width: 100%;   /* largura total */
+    height: 75px;  /* altura do cabeçalho */
+    text-align: center;  /* centraliza o texto */
+    display: flex;  /* deixa os itens na horizontal */
+    justify-content: center;    /* centraliza os itens */
+    border: auto;  /* borda automática */
+    align-items: center; /* alinha os itens ao centro verticalmente */
+    font-weight: bold;  /* deixa o texto em negrito */
+    position: sticky; /* faz o cabeçalho ficar fixo no topo */
+    top: 0;  /* distancia do topo */
+
+}
+.cabecalho-diferente {
+    background-image: url('../img/cabeçalho.jpg'); /* adiciona uma imagem de fundo ao cabeçalho */
+    background-size: cover; /* faz com que a imagem de fundo preencha todo o cabeçalho */
+    background-position: center; /* centraliza a imagem de fundo */
+    height: 75px;
+}
+
+header :hover {
+    color: rgb(209, 77, 77);   /* cor do texto */
+    transition: color 0.3s; /* transição suave ao passar o mouse */
+}
+header a{
+    font-size: 15px;  /* tamanho da fonte */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  /* fonte do texto */
+    color: white; /* cor do texto */
+    gap: 20px;  /* espaçamento entre os itens */
+}
+
+ul {
+    list-style: none; /* apaga as bolinhas da lista */
+    padding: 0;     /* apaga o espaçamento interno */
+    margin: 0;   /* apaga o espaçamento externo */
+    display: flex;  /* deixa os itens da lista na horizontal */
+    gap: 30px;  /* espaçamento entre os itens */
+    justify-content: center;    /* centraliza os itens */
+}
+a {
+    color: rgb(209, 77, 77);   /* cor do texto */
+    display: flex;  /* deixa o link como bloco flexível */;
+    text-decoration: none;  /* apaga o sublinhado dos links */
+}
+
+h1 {
+    text-align: center;  /* centraliza o texto */
+    margin-top: 20px;    /* espaçamento superior */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  /* fonte do texto */
+    color: black; /* cor do texto */
+
+}
+input[type="checkbox"] {
+    display: none;  /* esconde o checkbox */
+}
+body{
+    margin: 0; /* apaga o espaçamento externo */
+    padding: 0; /* apaga o espaçamento interno */
+    background-color: rgb(208, 185, 176); /* cor de fundo da página */
+
+}
+label {
+    color: white; /* cor do texto */
+
+
+}
+.name-toggle {
+    font-size: 20px; /* tamanho da fonte */
+    left: 20px; /* espaçamento esquerdo */
+    position: absolute; /* posiçiona o elemento em relação ao pai */
+}
+
+table tr td {
+    display: flex; /* deixa os itens na horizontal */
+    border: 1px solid black; /* borda da tabela */
+    text-align: center; /* centraliza o texto */
+    margin-left: 300px; /* espaçamento esquerdo */
+}
+.dropdown-content {
+    display: none; /* esconde o conteúdo do dropdown */
+    position: absolute; /* posiçiona o elemento em relação ao pai */
+    background-color: #2a2d45; /* cor de fundo do conteúdo do dropdown */
+    color: #fff; /* cor do texto */
+    width: 305px; /* largura */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* sombra do conteúdo do dropdown */
+    border: 1px solid #2a2d45; /* borda do conteúdo do dropdown */
+    box-sizing: border-box; /* box-sizing para que a largura e altura sejam calculadas corretamente */
+    padding: 8px 0; /* espaçamento interno */ 
+    left: 0; /* espaçamento esquerdo */
+    top: 100%; /* espaçamento superior */
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block; /* garante que cada link fique em linha separada */
+    padding: 6px 12px; /* espaçamento interno */
+    text-decoration: none; /* remove o sublinhado */
+    color: #fff;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #1e2230; /* efeito ao passar o mouse */
+}
+.dropdown{
+    position: relative; /* posiçiona o elemento em relação ao pai */
+    display: inline-block; /* deixa o elemento como bloco inline */
+}
+
+.dropbtn {
+    background-color: #2a2d45; /* cor de fundo do botões */
+    color: rgb(255, 255, 255); /* cor do texto */
+    padding: 10px 15px; /* espaçamento interno */
+    font-size: 18px; /* tamanho da fonte */
+    cursor: pointer; /* muda o cursor para pointer */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+    padding: 10px; /* espaçamento interno */
+    border-radius: 5px; /* borda arredondada */
+    border-width: 1px; /* largura da borda */
+    margin-top: 10px; /* espaçamento superior */
+    width: 305px; /* largura */
+}
+.dropdown-content a {
+    color: rgb(255, 255, 255); /* cor do texto */
+    display: block; /* deixa o elemento como bloco */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+    text-align: center; /* centraliza o texto */
+
+}
+
+.dropbtn:hover{
+    background-color: #3e4266; /* cor de fundo do botões ao passar o mouse */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* sombra ao passar o mouse */
+}
+
+.dropbtn::after{
+    content: '▼'; /* seta para baixo */
+    font-size: 14px; /* tamanho da fonte */
+    margin-left: 10px; /* espaçamento entre o texto e a seta */
+
+}
+
+
+.show {
+    display: block; /* mostra o conteúdo do dropdown */
+}
+.container-central {
+    display: flex; /* deixa os itens na horizontal */
+    flex-wrap: wrap; /* permite que os itens sejam quebrados em linhas */
+    justify-content: center; /* centraliza os itens horizontalmente */
+    gap: 30px; /* espaçamento entre os itens */
+    align-items: stretch; 
+    max-width: 1200px; /* largura máxima */
+    margin: 20px auto;  /* espaçamento externo */
+    padding: 20px; /* espaçamento interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* sombra suave para destaque */
+    margin-top: 0px; /* espaçamento superior */
+    margin-bottom: 0px; /* espaçamento inferior */
+    
+}
+.container-capitulo {
+    background-color: rgb(208, 185, 176);   /* cor de fundo do conteúdo do cápitulo */
+    color: #333;/* Cor do texto escura para bom contraste */
+    max-width: 1000px; /* Largura máxima para facilitar a leitura */
+    margin: 40px auto; /* Espaçamento externo */
+    margin-top: 0px; /* Espaçamento superior */
+    margin-bottom: 0px; /* Espaçamento inferior */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+}
+.container-capitulo p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    color: #000000e0;
+}
+.container-capitulo p strong {
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: #000000;
+}
+.Indice {
+    display: flex; /* deixa os itens na horizontal */
+    justify-content: space-between; /* empurra o titulo para a esquerda e o link para a direita */
+    align-items: center; /* alinha os itens ao centro verticalmente */
+    padding-bottom: 15px; /* espaçamento inferior */
+    border-bottom: 1px solid #000; /* linha inferior */
+    margin-bottom: 20px; /* espaçamento inferior */
+}
+.indice1 {
+    display: flex; /* deixa os itens na horizontal */
+    justify-content: space-between; /* empurra o titulo para a esquerda e o link para a direita */
+    align-items: center; /* alinha os itens ao centro verticalmente */
+    border-top: 1px solid #000; /* linha inferior */
+    padding-top: 15px; /* espaçamento inferior */
+    margin-top: 20px; /* espaçamento inferior */
+}
+
+.proximo {
+    border: 1px solid black; /* borda da tabela */
+    border-radius: 5px; /* borda arredondada */
+    padding: 10px; /* espaçamento interno */
+    text-decoration: none; /* remove o sublinhado do link */
+    color: black; /* cor do texto */
+    font-weight: bold; /* deixa o texto em negrito */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+}
+.voltar {
+    border: 1px solid black; /* borda da tabela */
+    border-radius: 5px; /* borda arredondada */
+    padding: 10px; /* espaçamento interno */
+    text-decoration: none; /* remove o sublinhado do link */
+    color: black; /* cor do texto */
+    font-weight: bold; /* deixa o texto em negrito */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+}
+.titulo {
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 30px; /* tamanho da fonte */
+    margin-bottom: 10px; /* espaçamento inferior */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+    color: black; /* cor do texto */
+}
+.titulo1 p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+    color: #000;
+}
+.titulo p {
+    font-size: 12px; /* tamanho da fonte */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+    color: rgb(71, 67, 67); /* cor do texto */
+    margin-bottom: -15px;
+}
+.capa {
+    flex: 1; /* deixa a imagem ocupar todo o espaço disponível */
+    min-width: 280px; /* largura mínima da imagem */
+    /* max-width: 500px; largura máxima da imagem */
+    border: 3px solid black; /* borda da imagem */
+    display: flex; /* deixa a imagem ocupar todo o espaço disponível */
+}
+.capa img {
+    display: block; /* remove o espaçamento inferior da imagem */
+    margin: 0 auto; /* centraliza a imagem */
+    max-width: 100%; /* largura máxima da imagem */
+    height: auto; /* altura autómatica da imagem */
+}
+.informacoes {
+    flex: 1.2; /* deixa o texto ocupar todo o espaço disponível */
+    min-width: 300px; /* largura mínima do texto */
+    display: flex;
+  flex-direction: column;
+}
+.informacoes p {
+    font-size: 12px; /* tamanho da fonte */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+    color: rgb(0, 0, 0); /* cor do texto */
+    line-height: 18px; /* espaçamento entre as linhas */
+    flex: 1; /* deixa o texto ocupar todo o espaço disponível */
+}
+.informacoes h2 {
+    font-weight: bold; /* deixa o texto em negrito */
+    margin-top: 0px; /* espaçamento superior */
+    margin-bottom: 10px; /* espaçamento inferior */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+    color: black; /* cor do texto */
+}
+html {
+  overflow-y: scroll;
+}
+.tags-conteiner {
+    
+    padding: 10px; /* espaçamento interno */
+    text-decoration: none; /* remove o sublinhado do link */
+    color: black; /* cor do texto */
+    font-weight: bold; /* deixa o texto em negrito */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+    margin-top: -10px; /* espaçamento superior */
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    color: black;
+    border-radius: 15px; /* borda arredondada */
+    margin-right: 10px;
+}
+
+.tag-medieval {
+    background-color: #8D8781; /* cor de fundo */
+    color: #fff; /* cor do texto */
+}
+
+.tag-magia {
+    background-color: #5C4B6B; /* cor de fundo */
+    color: #fff; /* cor do texto */
+}
+
+.tag-humanizacao {
+    background-color: #B85C4F; /* cor de fundo */
+    color: #fff; /* cor do texto */
+}
+
+.tag-construcao {
+    background-color: #3E6353; /* cor de fundo */
+    color: #fff; /* cor do texto */
+}
+
+.tag-espadachims {
+    background-color: #4A586E; /* cor de fundo */
+    color: #fff; /* cor do texto */
+}
+footer {
+    width: 100%;   /* largura total */
+    height: 220px;  /* altura do rodape */
+    background-color: rgb(0, 0, 0);    /* cor de fundo do rodape */
+    font-weight: bold;  /* deixa o texto em negrito */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+    color: white; /* cor do texto */
+    padding-bottom: 30px; /* espaçamento inferior */
+}
+.nav-footer {
+    color: #fff; /* cor do texto */ 
+    display: flex;  /* deixa o link como bloco flexível */;
+    flex-direction: column;  /* deixa os itens na vertical */
+    align-items: center; /* alinha os itens ao centro verticalmente */
+}
+.nav-footer ul {
+    display: flex;  /* deixa os itens da lista na horizontal */
+    list-style: none; /* apaga as bolinhas da lista */
+    margin-top: 15px; /* espaçamento superior */
+    padding: 0;     /* apaga o espaçamento interno */
+    gap: 25px;  /* espaçamento entre os itens */
+}
+.nav-footer a {
+    color: white; /* cor do texto */
+    text-decoration: none;  /* apaga o sublinhado dos links */
+    font-weight: bold;  /* deixa o texto em negrito */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+}
+
+.nav-footer a:hover {
+    color: rgb(209, 77, 77);   /* cor do texto */
+    transition: color 0.3s; /* transição suave ao passar o mouse */
+}
+
+.footer-conteiner {
+    display: flex; /* deixa os itens na horizontal */
+    justify-content: space-around; /* espaça os itens igualmente */
+    align-items: flex-start; /* alinha os itens ao topo */
+    width: 100%; /* largura total */
+    padding: 20px 0; /* espaçamento interno */
+}
+
+.direitos {
+    text-align: center; /* centraliza o texto */
+    padding: 20px 0; /* espaçamento interno */
+    border-top: 1px solid #444; /* linha superior */
+    font-size: 0.9em; /* tamanho da fonte */
+    color: #ccc; /* cor do texto */
+}
+.social-media {
+    display: flex; /* deixa os ícones na horizontal */
+    flex-direction: column; /* deixa os itens na vertical */
+    align-items: center; /* alinha os itens ao centro verticalmente */
+}
+.icons {
+    fill: #FFF; /* cor do ícone */
+    display: flex; /* deixa os ícones na horizontal */
+    align-items: center;
+    justify-content: center;
+}
+.espaco{ 
+    text-align: center; /* centraliza o texto */
+    font-weight: bold; /* deixa o texto em negrito */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+}
+.data {
+    text-align: center; /* centraliza o texto */
+    font-size: 20px; /* tamanho da fonte */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+}
+.voltar:hover {
+    background-color: #B99D95; /* cor de fundo ao passar o mouse */
+}
+.proximo:hover {
+    background-color: #B99D95;  /* cor de fundo ao passar o mouse */
+}
+
+.personagens {
+    display: flex; /* deixa os itens na horizontal */
+    justify-content: space-around; /* espaça os itens igualmente */
+    gap: 10px; /* espaçamento entre os itens */
+    padding: 20px; /* espaçamento interno */
+    border: 2px solid black; /* borda da tabela */
+    
+}
+.personagens-card {
+    width: 30%; /* largura */
+    text-align: center; /*centraliza o texto*/
+
+}
+.personagens-card img {
+    width: 100%; /* largura */
+    height: auto; /* altura autómatica */
+    border: 0px solid black; /* borda da imagem */
+    margin-bottom: -4px;
+}
+.Borda {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* sombra suave *
+    border-radius: 5px; /* borda arredondada */
+}
+.personagens p {
+    line-height: 19px; /* espaçamento entre as linhas */
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.linha {
+    border-top: 1px solid black;
+}
+.linha1 {
+    border-bottom: 1px solid black;
+    padding-top: 2px;
+}
+.introducao {
+    font-size: 15px; /* tamanho da fonte */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+    color: black; /* cor do texto */
+    margin: 20px auto; /* espaçamento externo */
+    max-width: 80%; /* largura máxima */
+    text-align: center; /* centraliza o texto */
+    line-height: 22px; /* espaçamento entre as linhas */
+}
+.linha-encima {
+    border-top: 2px solid black;
+    padding: 20px 0; /* espaçamento interno */
+}
+
+.notas {
+    border-top: 1px solid black ; /* linha superior */
+}
+.notas h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+    font: bold; /* deixa o texto em negrito */
+    color: black; /* cor do texto */
+    
+}
+.notas li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* fonte do texto */
+    line-height: 20px; /* espaçamento entre as linhas */
+}
+.notas ul {
+    flex-direction: column; 
+}
+.home {
+    width: 100%; 
+    height: 150px;
+    margin-top: -20px;
+    background-color: rgb(208, 185, 176);
+}
+.notas-autor {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.notas-autor li {
+    color: #000000e0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction: column;
+}
+.mapa h2 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+.mapa p {
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 24px;
+}
+.banner img {
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-capitulo1 {
+    background-color: rgb(208, 185, 176);   /* cor de fundo do conteúdo do cápitulo */
+    color: #333;/* Cor do texto escura para bom contraste */
+    max-width: 1000px; /* Largura máxima para facilitar a leitura */
+    margin: 40px auto; /* Espaçamento externo */
+    margin-top: 0px; /* Espaçamento superior */
+    margin-bottom: 0px; /* Espaçamento inferior */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+}
+.container-capitulo1 h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.container-capitulo1 h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.container-capitulo1 p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+@media (max-width: 1200px) {
+    .container-central{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* espaçamento entre os itens */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .container-central {
+        width: 100%;
+    }.cabecalho-diferente {
+        width: 100%;
+    }
+    .informacoes {
+        text-align: center;
+    }
+    .informacoes p {
+        text-align: left;
+    }
+    .informacoes h2 {
+        text-align: center;
+    }
+    .dropdown-content {
+        position: absolute;
+        width: 305px;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

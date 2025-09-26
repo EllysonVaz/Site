@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The unsung king</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/d2f13542-7939-405e-bae0-a35d77574ca9.jpg" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho-diferente">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"> The Unsung King</a>
+                </li>
+                <li>
+                    <a href="personagens.html"> Personagens</a>
+                </li>
+                <li>
+                    <a href="mapa.html"> Mapa</a>
+                </li>
+                <li>
+                    <a href="sobre.html"> Sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-central">
+
+        <div class="capa">
+           <img src="./img/capa.jpg" alt="Capa do Livro The Unsung King">
+        </div>
+
+
+    <div class="informacoes">
+            
+        <h2> The Unsung King</h2>
+
+            <p>
+
+                <strong>Criado e postado por:</strong> Sillyns <br>
+                <strong> Gênero:</strong> Aventura, Fantasia, misterios, suspense, ação. <br>
+                <strong> Classificação:</strong> 16+ <br>
+                <strong> Lançamento:</strong> 30/08/2025 <br>
+                <strong>Status:</strong> Em andamento <br>
+            </p>
+
+            <h2>Sinopse</h2>
+                
+            <p>
+                    Em Solara, um continente onde o domínio da espada é a chave para o prestígio, <strong>Jonathan Siller</strong> sonha em se tornar um espadachim renomado. Mas o destino parece desviar seu caminho quando ele fracassa no exame para a cobiçada Academia de Hildest. Mergulhado na angústia de seus sonhos despedaçados, Jonathan encontra uma misteriosa <strong>Chama do Triunfo</strong> — uma antiga lâmpada mágica que lhe oferece uma nova chance. <br>
+            </p>
+            <p>
+                    Impulsionado por uma ambição voraz, ele aceita o pacto, sem saber que sua ascensão ao poder o lançará em uma jornada de <strong>provações inimagináveis</strong>. Enfrentando inimigos ocultos e verdades sombrias sobre o próprio universo, Jonathan descobrirá que a verdadeira grandeza exige <strong>sacrifícios</strong> que poucos estão dispostos a fazer, e que o preço de salvar um mundo pode ser a glória esquecida de um <strong>rei não cantado</strong>.
+
+            </p>
+
+            <div class="tags-conteiner">
+
+                <h2> Tags </h2>
+
+                <span class="tag tag-medieval"> Medieval </span>
+                <span class="tag tag-magia" > Magia </span>
+                <span class="tag tag-humanizacao"> Humanização </span>
+                <span class="tag tag-construcao"> Construção de mundo </span>
+                <span class="tag tag-espadachims"> Espadachims </span>
+            </div>
+                
+            <div class="dropdown">
+                <button class="dropbtn"> Capitulos </button>
+                    <div id="meuDropdown" class="dropdown-content">
+                         <a href="capitulo1.html">Capitulo 1 - Uma Voz na Desolação</a>
+                        <a href="capitulo2.html"> Capitulo 2 - Olhos que Vigiam </a>
+                        <a href="capitulo3.html"> Capitulo 3 - Sangue e Núcleo </a>
+                        <a href="capitulo4.html"> Capitulo 4 - O preço do Olhar</a>
+                        <a href="capitulo5.html"> Capitulo 5 - Um Voto de Potencial</a>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+  // Pega o botão que tem a classe "dropbtn"
+  const dropbtn = document.querySelector('.dropbtn');
+  
+  // Pega o conteúdo do dropdown pelo seu ID
+  const dropdownContent = document.getElementById('meuDropdown');
+
+  // Adiciona um "ouvinte" que espera por um clique no botão
+  dropbtn.addEventListener('click', function() {
+    // Quando o botão é clicado, ele adiciona ou remove a classe "show"
+    dropdownContent.classList.toggle('show');
+  });
+
+  // Opcional: Fecha o menu se o usuário clicar em qualquer outro lugar da tela
+  window.onclick = function(event)  { 
+    if (!event.target.matches('.dropbtn')) {
+      if (dropdownContent.classList.contains('show')) {
+        dropdownContent.classList.remove('show'); 
+      }
+    }
+  }
+</script>
+
+<footer>
+
+    <div class="footer-conteiner">
+
+        <div class="nav-footer">   
+            <h2>Navegação</h2>
+    
+            <ul>
+                <li><a href="index.html"> The Unsung King</a></li>
+                <li><a href="personagens.html"> Personagens</a></li>
+                <li><a href="mapa.html"> Mapa</a></li>
+                    <li><a href="sobre.html"> Sobre</a></li>
+            </ul>
+        </div>
+
+        <div class="social-media">
+
+            <h2>Conecte-se</h2>
+             
+            <div class="icons">
+                <img src="./img/icons8-x.svg" alt="Twitter" width="14%" height="14%">
+                <img src="./img/954290_2227.svg" alt="Instagram" width="16%" height="16%">
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="direitos">
+        <p> &copy; 2025 Sillyns - The Unsung King - Todos os direitos reservados</p>
+    </div>
+</footer>
+</body>
+</html>
